@@ -73,7 +73,6 @@ address {
 }
 
 footer {
-    height: 400px;
     display: flex;
     background-color: #242424;
     color: white;
@@ -199,8 +198,7 @@ banner-text {
     background: url(../images/wave-bkgd.jpg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    height: 400px;
-    margin: 10px;
+    height: auto;
     color: white;
     flex-direction: column;
     align-items: center;
@@ -211,6 +209,19 @@ banner-text {
 
 .subscribe p {
     text-align: center;
+}
+
+.subscribe-button-container{
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.subscribe-button{
+    background: #b64036;
+    border-radius:20px;
+    font-weight: 20%;
+    font-size: 2rem;
 }
 
 .contact-informtion {
