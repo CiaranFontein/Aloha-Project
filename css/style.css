@@ -13,13 +13,13 @@ body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     color: #2d2d2d;
     text-align: center;
-    margin: 0 auto;
 }
 
 p {
     margin: 10px;
     padding: 10px;
     text-align: left;
+    font-weight: 100;
 }
 
 a {
@@ -41,6 +41,11 @@ img {
     height: auto;
 }
 
+img.logo {
+    margin: 0;
+    padding: 3px;
+}
+
 header {
     height: 200px;
     display: flex;
@@ -51,14 +56,16 @@ header {
 
 hr {
     width: 90%;
+    margin: 0 auto;
 }
 
 h1 {
     font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-    padding: 30px;
+    padding: 25px;
     font-size: 3em;
     font-style: italic;
     text-align: center;
+    box-shadow: 1px;
 }
 
 input {
@@ -68,7 +75,6 @@ input {
 address {
     margin: 10px;
     padding: 10px;
-    text-align: left;
     color: #969696;
 }
 
@@ -76,7 +82,8 @@ footer {
     display: flex;
     background-color: #242424;
     color: white;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Classes */
@@ -85,12 +92,19 @@ footer {
 .container {
     height: auto;
     margin: 0 auto;
-    max-width: 1240px;
+    width: 100%;
 }
 
 .logo {
     flex-basis: 100px;
-    max-width: 200px;
+    max-height: 50px;
+    padding: 10px;
+}
+
+.cart-icon {
+    flex-basis: 50px;
+    max-height: 50px;
+    padding: 5px;
 }
 
 .nav-section {
@@ -105,12 +119,8 @@ footer {
     justify-content: space-evenly;
 }
 
-.nav-buttons li {
-    margin: 20px;
-}
-
-.cart-icon {
-    flex-basis: 100px;
+ul.nav-buttons {
+    margin: 10px 0;
 }
 
 .banner {
@@ -120,16 +130,14 @@ footer {
     background: linear-gradient(to bottom,
         rgba(0, 0, 0, 0.25),
         rgba(0, 0, 0, 0.25)),
-        url(../images/banner-girl.png) no-repeat center 70px,
+        url(../images/banner-girl.png) no-repeat center 35px,
         url(../images/flower-bkgd.jpg) repeat-x center;
     background-size: cover, contain, cover;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    text-align: center;
-    vertical-align: middle;
 }
 
 banner-text {
@@ -140,13 +148,15 @@ banner-text {
 
 .banner-title {
     text-transform: uppercase;
+    font-size: 1.25rem;
+    padding: 15px;
 }
 
 .banner-subtitle {
     font-family: Playfair Display, "Times New Roman", Times, serif;
-    font-size: 3em;
+    font-size: 2.25em;
     flex-wrap: wrap;
-    width: 600px;
+    width: 400px;
 }
 
 .container-small {
@@ -155,7 +165,6 @@ banner-text {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.1em;
     line-height: 1.5;
 }
 
@@ -168,12 +177,12 @@ banner-text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    font-size:3rem;
+    font-size: 3rem;
     color: white;
     font-weight: 0.75;
 }
 
-.grid-cell{
+.grid-cell {
     position: relative;
     display: flex;
     justify-content: center;
@@ -181,69 +190,120 @@ banner-text {
 }
 
 .large-grid-cell {
-    position:relative;
+    position: relative;
     grid-column: 1/3;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.category-title{
+.category-title {
     position: absolute;
     z-index: 1;
 }
 
 .subscribe {
     display: flex;
-    background: url(../images/wave-bkgd.jpg);
-    background-position: 100% 100%;
+    background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),
+    url(../images/wave-bkgd.jpg);
+    background-position: 55% 88%;
     background-repeat: no-repeat;
-    height: auto;
     color: white;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    font-size: 1.6em;
     line-height: 2;
+    margin-bottom: 10px;
+}
+
+.subscribe-elements {
+    margin: 30px 0;
+}
+
+.subscribe-elements h1 {
+    padding: 0;
 }
 
 .subscribe p {
     text-align: center;
+    letter-spacing: 1.15px;
+    font-weight: 600;
 }
 
-.subscribe-button-container{
+*:focus {
+    outline: none;
+}
+
+
+
+.subscribe-button-container {
+    display: flex;
     background: white;
     border-radius: 20px;
-    margin-bottom: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
-.subscribe-button{
-    background: #b64036;
-    border-radius:20px;
-    font-weight: 20%;
-    font-size: 2rem;
+.enter-email-box {
+    flex-grow: 1;
+    border: none;
+    width: auto;
+    border-radius: 1rem;
+    margin: 0 20px;
+    color: #969696;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
 }
 
-.contact-informtion {
+.enter-email-box::placeholder{
+    color: #AEAEAE;
+}
+
+.subscribe-button {
+    background: #e2574c;
+    margin: 5px;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    border: none;
+    height: 32px;
+    width: 100px;
+}
+
+.contact-information {
+    margin: 50px 0;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
 }
 
-.social-media {
-    flex-direction: column;
-    position: 0% 50%;
+.contact-information p {
+    text-align: center;
+
 }
 
-.social-media ul{
+.contact-information a {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-section {
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    line-height: 1.75;
+}
+
+.social-media ul {
     display: flex;
-    flex-direction: column;
     vertical-align: middle;
     height: auto;
+    justify-content: center;
+    padding: 10px 0;
 }
 
-.social-media li{
-    padding: 10px 30px;
-    text-align: left;
+.icon-label {
+    display: none;
 }
 
 .carousel-cell {
