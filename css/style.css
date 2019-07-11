@@ -6,7 +6,7 @@
 /*****************/
 
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body {
@@ -16,8 +16,6 @@ body {
 }
 
 p {
-    margin: 10px;
-    padding: 10px;
     text-align: left;
     font-weight: 100;
 }
@@ -25,7 +23,6 @@ p {
 a {
     color: #e2574c;
     text-decoration: none;
-    font-size: 1.25em;
 }
 
 a:hover {
@@ -57,6 +54,7 @@ header {
 hr {
     width: 90%;
     margin: 0 auto;
+    color: #d7d7d7;
 }
 
 h1 {
@@ -65,7 +63,6 @@ h1 {
     font-size: 3em;
     font-style: italic;
     text-align: center;
-    box-shadow: 1px;
 }
 
 input {
@@ -73,8 +70,6 @@ input {
 }
 
 address {
-    margin: 10px;
-    padding: 10px;
     color: #969696;
 }
 
@@ -111,6 +106,7 @@ footer {
     text-transform: uppercase;
     flex-basis: 100%;
     text-align: center;
+    width:100%;
 }
 
 .nav-buttons {
@@ -120,7 +116,10 @@ footer {
 }
 
 ul.nav-buttons {
+    display: flex;
     margin: 10px 0;
+    align-items: center;
+    width: 100%;
 }
 
 .banner {
@@ -150,6 +149,7 @@ banner-text {
     text-transform: uppercase;
     font-size: 1.25rem;
     padding: 15px;
+    text-shadow: 2px 2px 4px #555;
 }
 
 .banner-subtitle {
@@ -157,6 +157,12 @@ banner-text {
     font-size: 2.25em;
     flex-wrap: wrap;
     width: 400px;
+    text-shadow: 2px 2px 4px #555;
+}
+
+.about{
+    padding: 10px;
+    line-height: 1.5;
 }
 
 .container-small {
@@ -175,11 +181,16 @@ banner-text {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: repeat(4, 24%);
     font-size: 3rem;
     color: white;
-    font-weight: 0.75;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #555;
+    font-weight: bold;
+    row-gap: 2%;
+    column-gap: 1%;
+    align-items: center; 
 }
 
 .grid-cell {
@@ -187,6 +198,10 @@ banner-text {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.grid-cell img{
+    width: 100%;
 }
 
 .large-grid-cell {
@@ -202,11 +217,16 @@ banner-text {
     z-index: 1;
 }
 
+p.category-title{
+    font-weight: bold;
+    text-align: center;
+}
+
 .subscribe {
     display: flex;
     background: linear-gradient(to bottom,
-    rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),
-    url(../images/wave-bkgd.jpg);
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url(../images/wave-bkgd.jpg);
     background-position: 55% 88%;
     background-repeat: no-repeat;
     color: white;
@@ -219,6 +239,7 @@ banner-text {
 
 .subscribe-elements {
     margin: 30px 0;
+    padding: 15px;
 }
 
 .subscribe-elements h1 {
@@ -229,6 +250,7 @@ banner-text {
     text-align: center;
     letter-spacing: 1.15px;
     font-weight: 600;
+    padding:10px;
 }
 
 *:focus {
@@ -240,7 +262,7 @@ banner-text {
 .subscribe-button-container {
     display: flex;
     background: white;
-    border-radius: 20px;
+    border-radius: 3rem;
     max-width: 80%;
     margin: 0 auto;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -250,36 +272,37 @@ banner-text {
     flex-grow: 1;
     border: none;
     width: auto;
-    border-radius: 1rem;
+    border-radius: 3rem;
     margin: 0 20px;
     color: #969696;
     font-size: 1rem;
     letter-spacing: 0.5px;
 }
 
-.enter-email-box::placeholder{
+.enter-email-box::placeholder {
     color: #AEAEAE;
 }
 
 .subscribe-button {
     background: #e2574c;
     margin: 5px;
-    border-radius: 1rem;
+    border-radius: 2rem;
     font-weight: 500;
-    font-size: 0.8rem;
     border: none;
-    height: 32px;
-    width: 100px;
+    height: 40px;
+    width: 110px;
 }
 
 .contact-information {
-    margin: 50px 0;
+    margin: 40px 0px 10px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
 .contact-information p {
+
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
     text-align: center;
 
 }
@@ -289,8 +312,12 @@ banner-text {
     color: white;
 }
 
+.social-media{
+    margin-bottom: 30px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
 .footer-section {
-    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
     line-height: 1.75;
 }
 
@@ -304,6 +331,10 @@ banner-text {
 
 .icon-label {
     display: none;
+}
+
+.footer-halves{
+    width: 100%;
 }
 
 .carousel-cell {
@@ -324,7 +355,78 @@ banner-text {
 }
 
 /*Tablet Width*/
-@media screen and (min-width: 600px) {}
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+    hr {
+        display: none;
+    }
+
+    .icon-label {
+        display: inline-block;
+    }
+
+    .social-media ul{
+        flex-direction: column;
+    }
+
+    .contact-information p{
+        text-align:left;
+    }
+
+    .footer-section{
+        text-align: left;
+    }
+
+    .cart-icon {
+        order: 2;
+    }
+
+    .nav-section {
+        flex-basis: auto;
+        width: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(4, 24.5%);
+        grid-template-rows: repeat(2, 49%);
+        font-size:1.5rem;
+    }
+
+    .large-grid-cell:nth-of-type(2n) {
+        grid-column: 3/5;
+    }
+
+    .contact-information{
+        margin: 40px 20px;
+    }
+
+    .footer-section{
+
+        margin: 0 20px;
+    }
+
+    .social-media{
+        margin: 40px 20px;
+    }
+
+    .social-media ul{
+        padding: 0;
+    }
+
+    .footer-halves{
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 /*Desktop Width*/
-@media screen and (min-width: 1240px) {}
+@media screen and (min-width: 1240px) {
+    .grid-container{
+        font-size:3rem;
+    }
+}

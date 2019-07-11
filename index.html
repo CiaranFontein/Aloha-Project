@@ -20,9 +20,7 @@
 <body>
     <header class="container">
         <img class="logo" src="images/aloha-logo.svg">
-        <div>
-            <img class="cart-icon" src="images/cart-icon.svg" alt="cart icon">
-        </div>
+        <img class="cart-icon" src="images/cart-icon.svg" alt="cart icon">
         <hr>
         <nav class="nav-section">
             <ul class="nav-buttons">
@@ -39,7 +37,7 @@
             <div class="banner-subtitle">Spring/Summer 2016</div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" class="about">
         <h1>Hand-Crafted Styles</h1>
         <p>Aloga Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or
             sign-up for updates below.</p>
@@ -105,23 +103,27 @@
             <p class="container-small">Stay updated on our latest product releases, be first to find out about upcoming
                 sales, and get free
                 style tips from our blog. Unsubscribe at any time.</p>
-            <div class="subscribe-button-container">
-                <input class="enter-email-box" type="text" placeholder="Your Email" name="mail" required>
-                <input class="subscribe-button" type="submit" value="Subscribe">
+            <div>
+                <form class="subscribe-button-container">
+                    <input class="enter-email-box" type="email" placeholder="Your Email" name="mail" required>
+                    <input class="subscribe-button" type="submit" value="Subscribe">
+                </form>
             </div>
         </div>
     </section>
     <footer>
-        <div id="contact-information" class="contact-information">
-            <div class="footer-section">
-                <p>© 2016 Aloha Apparel Co. <br />Powered by HTML and CSS.</p>
-            </div>
-            <div class="footer-section">
-                <p>604-604-6040. <a href="mailto:infor@alohaapparel.com?Subject=Hello"
-                        target="_top">infor@alohaapparel.com</a></p>
-            </div>
-            <div class="footer-section">
-                <address>1490 W Broadway <br>Vancouver, BC, Canada</address>
+        <div class="footer-halves">
+            <div id="contact-information" class="contact-information">
+                <div class="footer-section">
+                    <p>© 2016 Aloha Apparel Co. <br />Powered by HTML and CSS.</p>
+                </div>
+                <div class="footer-section">
+                    <p>604-604-6040. <a href="mailto:infor@alohaapparel.com?Subject=Hello"
+                            target="_top">infor@alohaapparel.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <address>1490 W Broadway <br>Vancouver, BC, Canada</address>
+                </div>
             </div>
             <div class="social-media footer-section">
                 <ul>
