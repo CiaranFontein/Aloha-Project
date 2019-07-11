@@ -190,9 +190,8 @@ banner-text {
     text-transform: uppercase;
     text-shadow: 2px 2px 5px #555;
     font-weight: bold;
-    row-gap: 1%;
-    column-gap: 2%;
-    align-items: center;
+    row-gap: 2%;
+    column-gap: 4%;
     overflow: hidden;
 }
 
@@ -202,7 +201,7 @@ banner-text {
 
 .grid-container>.grid-cell>img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .grid-cell:first-child {
@@ -416,9 +415,8 @@ p.category-title {
     .grid-container {
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(2, 50%);
-
-        row-gap: 2%;
-        column-gap: 1%;
+        row-gap: 4%;
+        column-gap: 2%;
         font-size: 1.5rem;
     }
 
