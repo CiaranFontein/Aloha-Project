@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Flickity -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/flickity/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="js/flickity/flickity.css" media="screen">
+
 </head>
 
 <body>
@@ -68,35 +69,60 @@
             <p class="category-title">Women's</p>
         </div>
     </section>
-    <!-- <section id="featured">
+    <!------------Featured Flickity Carousel------------>
+    <section id="featured">
         <h1>Most-Loved Products</h1>
-        <div class="featured-products main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="main-carousel">
             <div class="carousel-cell">
-                <img class="carousel-cell-image" src="images\checked-stretch-dress.jpg">
-                <h5>Dresses</h5>
-                <h3>Checked Stretch Dress</h3>
-                <h4>$129.00</h4>
+                <img src="images/stretch-knit-dress.jpg">
+                <p>Dresses</p>
+                <p>Stretch Knit Dress</p>
+                <p>$169.00</p>
             </div>
-            <div class="carousel-cell>
-                <img class=" carousel-cell-image" src="images\blue-hipster-backpack.jpg">
-                <h5>Bags</h5>
-                <h3>Blue Hipster Backpack</h3>
-                <h4>$69.00</h4>
+            <div class="carousel-cell">
+                <img src="images/cotton-blue-shirt.jpg">
+                <p>Shirts</p>
+                <p>Cotton Blue Shirt</p>
+                <p>$89.00</p>
             </div>
-            <div class="carousel-cell>
-                <img class=" carousel-cell-image" src="images\demin-overall-shorts.jpg">
-                <h5>Denim</h5>
-                <h3>Denim Overall Shorts</h3>
-                <h4>$89.00</h4>
+            <div class="carousel-cell">
+                <img src="images/checked-stretch-dress.jpg">
+                <p>Dresses</p>
+                <p>Checked Stretch Dress</p>
+                <p>$129.00</p>
             </div>
-            <div class="carousel-cell>
-                <img class=" carousel-cell-image" src="images\pink-dotted-dress.jpg">
-                <h5>Dresses</h5>
-                <h3>Pink Dotted Dress</h3>
-                <h4>$99.00</h4>
+            <div class="carousel-cell">
+                <img src="images/blue-hipster-backpack.jpg">
+                <p>Bags</p>
+                <p>Blue Hipster Backpack</p>
+                <p>$69.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/demin-overall-shorts.jpg">
+                <p>Denim</p>
+                <p>Denim Overall Shorts</p>
+                <p>$89.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/pink-dotted-dress.jpg">
+                <p>Dresses</p>
+                <p>Pink Dotted Dress</p>
+                <p>$99.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/blue-silk-dress.jpg">
+                <p>Dresses</p>
+                <p>Blue Silk Dress</p>
+                <p>$119.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/cotton-yellow-tshirt.jpg">
+                <p>Shirts</p>
+                <p>Cotton Yellow Tshirt</p>
+                <p>$39.00</p>
             </div>
         </div>
-    </section> -->
+    </section>
     <section class="subscribe">
         <div id="update" class="subscribe-elements">
             <h1>Sign-up for Updates</h1>
@@ -105,8 +131,9 @@
                 style tips from our blog. Unsubscribe at any time.</p>
             <div>
                 <form class="subscribe-button-container">
-                    <input class="enter-email-box" type="email" placeholder="Your Email" name="mail" required>
-                    <input class="subscribe-button" type="submit" value="Subscribe">
+                    <input id="email" class="enter-email-box" type="email" placeholder="Your Email" name="mail"
+                        required>
+                    <input class="subscribe-button" type="submit" value="Subscribe" onclick="ValidateEmail()">
                 </form>
             </div>
         </div>
@@ -155,7 +182,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
         </script>
-    <script src="js/lastword.js"></script>
+    <script src="js/emailValidation.js">
+    </script>
+    <script src="js/lastWord.js"></script>
+    <script src="js/flickityInitialization.js"></script>
+    <script src="js/fillCarousel.js"></script>
 </body>
 
 </html>
