@@ -183,8 +183,8 @@ banner-text {
     display: grid;
     position: relative;
     margin: 0 auto;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: repeat(4, 23.5%);
     font-size: 3rem;
     color: white;
     text-transform: uppercase;
@@ -413,8 +413,8 @@ p.category-title {
     }
 
     .grid-container {
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(2, 50%);
+        grid-template-columns: repeat(4, 23.5%);
+        grid-template-rows: repeat(2, 48%);
         row-gap: 4%;
         column-gap: 2%;
         font-size: 1.5rem;
