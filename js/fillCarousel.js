@@ -43,5 +43,9 @@ products.forEach(function (product, index) {
     newCarouselPrice.innerText = products[index].price;
     newCarouselCell.append(newCarouselPrice);
 
+    newCarouselCell.addEventListener("click", function(){
+        addItemToCart();
+    });
+
     mainCarousel.append(newCarouselCell);
 });
