@@ -3,7 +3,7 @@ function ready() {
   const flkty = new Flickity(elem, {
     // options
     cellAlign: 'left',
-    autoplay: true,
+    autoPlay: true,
     wrapAround: true,
     freeScroll: false,
     imagesLoaded: true
