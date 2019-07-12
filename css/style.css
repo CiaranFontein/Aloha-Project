@@ -53,17 +53,25 @@ img.logo {
 }
 
 header {
-    height: 200px;
+    position: fixed;
+    z-index:2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    background: #FFF;
+}
+
+.fixed-heading-gap{
+    height: 85px;
 }
 
 hr {
     width: 90%;
     margin: 0 auto;
-    color: #e7e7e7;
+    color: #d7d7d7;
+    border:0;
+    border-top: 1px solid;
 }
 
 h1 {
@@ -439,6 +447,10 @@ a.footer-section.li{
 
     hr {
         display: none;
+    }
+
+    .fixed-heading-gap{
+        height: 50px;
     }
 
     .icon-label {
