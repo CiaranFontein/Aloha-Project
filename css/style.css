@@ -26,8 +26,16 @@ a {
     text-decoration: none;
 }
 
+li a{
+    color: #FFF;
+}
+
 a:hover {
     color: #b64036;
+}
+
+li a:hover{
+    color: #bbb;
 }
 
 i {
@@ -164,6 +172,12 @@ banner-text {
 .about {
     padding: 10px;
     line-height: 1.5;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.about p{
+    text-align:center;
 }
 
 .container-small {
@@ -343,6 +357,10 @@ p.category-title {
     line-height: 1.75;
 }
 
+a.footer-section.li{
+    color: #FFF;
+}
+
 .social-media ul {
     display: flex;
     vertical-align: middle;
@@ -475,6 +493,10 @@ p.category-title {
     .carousel-cell {
         width: 33.33%;
     }
+
+    .about {
+        width: 70%;
+    }
 }
 /*Desktop Width*/
 @media screen and (min-width: 1240px) {
@@ -484,5 +506,9 @@ p.category-title {
 
     .carousel-cell {
         width: 25%;
+    }
+
+    .about{
+        width: 90%;
     }
 }

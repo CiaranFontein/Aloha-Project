@@ -3,8 +3,9 @@ function ready() {
   const flkty = new Flickity(elem, {
     // options
     cellAlign: 'left',
+    autoplay: true,
     wrapAround: true,
-    freeScroll: true,
+    freeScroll: false,
     imagesLoaded: true
   });
 }
