@@ -78,4 +78,4 @@ Incorporate a fixed header at the top of the page so that the navigation menu is
 
 Carousel is loaded via external js file with an array of all the products data and sources
 Categories are organized and layed out incorporating a flex-grid
-Headings are seperated via external js file so that the last word in the <h1> tags in the html file will be styled differently instead of creating a new span inbetween each h1
+Headings are seperated via external js file so that the last word in the h1 tags in the html file will be styled differently instead of creating a new span inbetween each h1
