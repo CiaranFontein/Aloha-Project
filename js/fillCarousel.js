@@ -19,6 +19,7 @@ products = [
     new Product("Shirts", "Cotton Yellow Tshirt", "$39.00", "images/cotton-yellow-tshirt.jpg")
 ];
 
+//Create a carousel-cell for each Product in products
 products.forEach(function (product, index) {
     let newCarouselCell = document.createElement('div');
     newCarouselCell.setAttribute("class", "carousel-cell");
