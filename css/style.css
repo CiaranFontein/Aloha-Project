@@ -359,12 +359,38 @@ p.category-title {
     width: 100%;
 }
 
+/*Carousel Section*/
 .carousel-cell {
     width: 100%;
 }
 
 .carousel-cell p{
     text-align: center;
+}
+
+.product-category{
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#969696;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.product-name{
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    color: #e2574c;
+    font-size: 3rem;
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+.product-price{
+    font-size: 2rem;
+    font-weight:bold;
+    color:#969696;
+    padding: 10px;
 }
 
 /*Tablet Width*/
@@ -418,7 +444,7 @@ p.category-title {
     }
 
     .contact-information {
-        margin: 40px 20px;
+        margin: 40px 5%;
     }
 
     .footer-section {
@@ -427,7 +453,7 @@ p.category-title {
     }
 
     .social-media {
-        margin: 40px 20px;
+        margin: 40px 5%;
     }
 
     .social-media ul {
@@ -436,7 +462,7 @@ p.category-title {
 
     .footer-halves {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .carousel-cell {
@@ -444,6 +470,12 @@ p.category-title {
     }
 }
 
+/*In between desktop and tablet (for smooth carousel stretching)*/
+@media screen and (min-width: 910px) {
+    .carousel-cell {
+        width: 33.33%;
+    }
+}
 /*Desktop Width*/
 @media screen and (min-width: 1240px) {
     .grid-container {
