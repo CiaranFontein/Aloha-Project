@@ -55,6 +55,9 @@
             </ul>
         </nav>
     </header>
+    
+    <!--This div pushes the next section down because the section before is fixed and I
+    don't want them to overlap-->
     <div class="fixed-heading-gap"></div>
     <div class="banner container">
         <div class="banner-text">
@@ -62,6 +65,9 @@
             <div class="banner-subtitle">Spring/Summer 2016</div>
         </div>
     </div>
+
+    <!--About Section-->
+    <!--If the div has a heading I used <section> else I used div-->
     <section id="about" class="about">
         <h1>Hand-Crafted Styles</h1>
         <p>Aloga Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or
@@ -69,6 +75,7 @@
     </section>
 
     <!--Grid Shop Category Section-->
+    <!--This section was done using flex-grid and percentage sizes for cells-->
     <div id="shop" class="categories grid-container">
         <div class="grid-cell">
             <img src="images/mens-category.jpg" alt="men's">
@@ -113,7 +120,9 @@
                 <form class="subscribe-button-container">
                     <input id="email" class="enter-email-box" type="email" placeholder="Your Email" name="mail"
                         required>
-                    <input class="subscribe-button" type="submit" value="Subscribe" onclick="ValidateEmail()">
+
+                    <!--return false after onclick prevents page refreshing-->
+                    <input class="subscribe-button" type="submit" value="Subscribe" onclick="ValidateEmail(); return false">
                 </form>
             </div>
         </div>
@@ -161,6 +170,7 @@
                         </a>
                     </li>
                     <li>
+                        <!--This is a link to the wiki explaining the extinction of Google+-->
                         <a href="https://en.wikipedia.org/wiki/Google%2B">
                             <i class="fab fa-google-plus-g"></i>
                             <div class="icon-label">Google+</div>
@@ -171,6 +181,7 @@
         </div>
     </footer>
 
+    <!--Javascript sources-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
         </script>
@@ -181,5 +192,4 @@
     <script src="js/flickityInitialization.js"></script>
     <script src="js/notificationDot.js"></script>
 </body>
-
 </html>
