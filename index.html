@@ -99,6 +99,8 @@
   </head>
 
   <body>
+    <a class="screen-reader-text" href="#main">Skip to content</a>
+
     <header class="container">
       <img class="logo" src="images/aloha-logo.svg" alt="aloha logo" />
       <div class="cart-icon">
@@ -142,7 +144,7 @@
 
     <!--Grid Shop Category Section-->
     <!--This section was done using flex-grid and percentage sizes for cells-->
-    <div id="shop" class="categories grid-container">
+    <div id="shop" id="main" class="categories grid-container">
       <div class="grid-cell">
         <img src="images/mens-category.jpg" alt="men's" />
         <p class="category-title">Men's</p>
@@ -278,5 +280,6 @@
     <script src="js/flickityInitialization.js"></script>
     <script src="js/notificationDot.js"></script>
     <script src="js/tota11y.min.js"></script>
+    <script src="js/skipLinkFocusFix.js"></script>
   </body>
 </html>
