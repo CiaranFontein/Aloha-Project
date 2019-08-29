@@ -1,11 +1,11 @@
 # Aloha Project
 Responsive website creation assignment using HTML, CSS, and Javascript [RED]
 
-![alt text](https://github.com/CiaranFontein/Aloha/screenshots/home.png)
+![](https://github.com/CiaranFontein/Aloha-Project/blob/master/screenshots/header.png)
 
 ### Responsive Layout
 
-![alt text](https://github.com/CiaranFontein/Aloha/screenshots/aloha.gif)
+![](https://github.com/CiaranFontein/Aloha-Project/blob/master/screenshots/aloha.gif)
 
 ### JavaScript Functionalities
 
@@ -26,4 +26,4 @@ Headings are seperated via external js file so that the last word in the h1 tags
 
 ## Meticulous CSS Formatting from Header to Footer
 
-![alt text](https://github.com/CiaranFontein/Aloha/screenshots/footer.png)
+![](https://github.com/CiaranFontein/Aloha-Project/blob/master/screenshots/footer.png)
